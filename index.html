@@ -2,11 +2,164 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <div class="page-header__wrapper  container">
+        <a class="page-header__logo">
+          <img src="#"/>
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            Открыть закрыть меню
+            <img src="#"/>
+            <img src="#"/>
+          </button>
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="download">
+      <div class="download__wrapper  container">
+        <div class="download__inner">
+          <h2 class="download__heading">Взгляните на жизнь иначе!</h2>
+          <a href="#" class="btn  btn--download  intro__btn">Скачать приложение</a>
+          <ul class="download__icons">
+            <li class="download__icon  download__icon--apple"><a href="#"><img src="#"/></a></li>
+            <li class="download__icon  download__icon--android"><a href="#"><img src="#"/></a></li>
+            <li class="download__icon  download__icon--windows"><a href="#"><img src="#"/></a></li>
+          </ul>
+          <div class="download__comment">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <h2 class="offer__text">Устали от серости мегаполиса?</h2>
+      <h2 class="offer__text">Нам есть, что вам предложить!</h2>
+    </section>
+
+    <section class="advantages">
+      <ul class="advantages__items">
+        <li class="advantages__item">
+          <h2 class="advantages__title">Поднимает настроение</h2>
+          <div class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</div>
+        </li>
+        <li class="advantages__item">
+          <h2 class="advantages__title">Меняет мир вокруг</h2>
+          <div class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</div>
+        </li>
+        <li class="advantages__item">
+          <h2 class="advantages__title">Заводит новых друзей</h2>
+          <div class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="mentions slider">
+      <div class="mentions__items  container">
+        <blockquote class="mentions__item">
+          <cite class="mentions__user-name">Николай Петров</cite>
+          <div class="mentions__user-about">25 лет, водитель трамвая</div>
+          <div class="mentions__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>
+        </blockquote>
+
+        <blockquote class="mentions__item">
+          <cite class="mentions__user-name">Николай Петров</cite>
+          <div class="mentions__user-about">25 лет, водитель трамвая</div>
+          <div class="mentions__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>
+        </blockquote>
+
+        <blockquote class="mentions__item">
+          <cite class="mentions__user-name">Николай Петров</cite>
+          <div class="mentions__user-about">25 лет, водитель трамвая</div>
+          <div class="mentions__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>
+        </blockquote>
+
+        <div class="slider__controls">
+          <input class="slider__control" type="radio" />
+          <input class="slider__control" type="radio" />
+          <input class="slider__control" type="radio" />
+        </div>
+      </div>
+    </section>
+
+    <section class="services-package">
+      <div class="slider">
+        <ul class="services-package__items">
+          <li class="plans__item">
+            <header class="services-package__header">
+            </header>
+            <div class="services-package__feature">Розовый фильтр</div>
+            <div class="services-package__feature">Смайлики</div>
+            <div class="services-package__feature">Комментарии</div>
+          </li>
+          <li class="services-package__item">
+            <header class="services-package__header">
+              <div class="services-package__name">База</div>
+              <div class="services-package__price">1,99 USD</div>
+            </header>
+            <div class="services-package__feature">Розовый фильтр</div>
+            <div class="services-package__feature">Смайлики</div>
+            <div class="services-package__feature">Комментарии</div>
+          </li>
+          <li class="services-package__item">
+            <header class="services-package__header  services-package__header--hit" data-value="Хит">
+              <div class="plans__name">Стандарт</div>
+              <div class="plans__price">3,99 USD</div>
+            </header>
+            <div class="services-package__feature ">Розовый фильтр</div>
+            <div class="plans__feature">Смайлики</div>
+            <div class="plans__feature">Комментарии</div>
+          </li>
+          <li class="services-package__item">
+            <header class="services-package__header">
+              <div class="services-package__name">Анлим</div>
+              <div class="services-package__price">9,99 USD</div>
+            </header>
+            <div class="services-package__feature">Розовый фильтр</div>
+            <div class="services-package__feature">Смайлики</div>
+            <div class="services-package__feature">Комментарии</div>
+          </li>
+        </ul>
+
+        <div class="slider__controls">
+          <input class="slider__control" type="radio" />
+          <input class="slider__control" type="radio" />
+          <input class="slider__control" type="radio" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <div class="contact-us__wrapper  container">
+        <h2 class="contact-us__title">Остались вопросы?<br>
+          Свяжитесь с нами!</h2>
+        <div class="contact-us__block">
+          <div class="contact-us__heading">Звоните:</div>
+          <div class="contact-us__info">+7 (812) 555-66-66</div>
+        </div>
+        <div class="contact-us__block">
+          <div class="contact-us__heading">Пишите:</div>
+          <div class="contact-us__info"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
+        </div>
+        <div class="contact-us__block">
+          <div class="contact-us__heading">Приезжайте в гости:</div>
+          <div class="contact-us__info">ул. Большая<br> Конюшенная, 19/8</div>
+        </div>
+      </div>
+      <div class="contact-us__map" id="map">
+        <img src="#" alt="">
+      </div>
+    </section>
 
   </body>
 </html>
