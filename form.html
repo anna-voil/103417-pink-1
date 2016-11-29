@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper  container">
+        <a class="page-header__logo">
+          <img src="#"/>
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            Открыть закрыть меню
+            <img src="#"/>
+            <img src="#"/>
+          </button>
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="intro">
+      <h2 class="intro__heading">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</div>
+    </section>
+
+    <form class="form  container" action="#" method="post">
+
+      <fieldset class="form__personal-data">
+        <div class="form__wrapper">
+          <label class="form__label-for-input" for="name-field">Фамилия:</label>
+          <input class="form__input" type="text" name="name" id="name-field" placeholder="Укажите фамилию *">
+
+          <label class="form__label-for-input" for="surname-field">Имя:</label>
+          <input class="form__input" type="text" name="surname" id="surname-field" placeholder="Введите ваше имя *">
+
+          <label class="form__label-for-input" for="middle-name-field">Отчество:</label>
+          <input class="form__input" type="text" name="middle-name" id="middle-name-field" placeholder="Ну и отчество тоже">
+        </div>
+      </fieldset>
+
+      <fieldset class="form__achievements">
+        <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+        <div class="form__wrapper">
+          <input class="form__checkbox" id="selfie" type="checkbox" name="selfie" checked>
+          <label class="form__checkbox" for="selfie">Сделал селфи с акулой</label>
+
+          <input class="form__checkbox" id="burned" type="checkbox" name="burned" checked>
+          <label class="form__checkbox" for="burned">Обгорел на пляже</label>
+
+          <input class="form__checkbox" id="chuck-norris" type="checkbox" name="chuck-norris">
+          <label class="form__checkbox" for="chuck-norris">Видел Чака Норриса</label>
+
+          <input class="form__checkbox" id="souvenirs" type="checkbox" name="souvenirs">
+          <label class="form__checkbox" for="souvenirs">Накупил сувениров</label>
+
+          <input class="form__checkbox" id="tower" type="checkbox" name="tower" checked>
+          <label class="form__checkbox" for="tower">Удержал башню</label>
+
+          <input class="form__checkbox" id="ruined-hotel" type="checkbox" name="ruined-hotel">
+          <label class="form__checkbox" for="ruined-hotel">Разгромил отель</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__user-contacts">
+        <h2 class="form__title">Контактная информация</h2>
+        <div class="form__wrapper">
+          <label class="form__label-for-input" for="name-field">Номер телефона:</label>
+          <input class="form__input  form__input--phone" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+
+          <label class="form__label-for-input" for="surname-field">Адрес почты:</label>
+          <input class="form__input  form__input--email" type="email" name="email" id="email-field" placeholder="Введите почту *">
+        </div>
+      </fieldset>
+
+      <fieldset class="form__apps">
+        <h2 class="form__title">С каким приложением путешествовали?</h2>
+        <div class="form__wrapper">
+          <input class="form__radiobtn" id="iOS-app" type="radio" name="app" value="iOS" checked>
+          <label class="form__radiobtn" for="iOS-app">Pink для iOS</label>
+
+          <input class="form__radiobtn" id="android-app" type="radio" name="app" value="android">
+          <label class="form__radiobtn" for="android-app">Pink на Android</label>
+
+          <input class="form__radiobtn" id="windows-app" type="radio" name="app" value="windows">
+          <label class="form__radiobutn" for="windows-app">Windows Phone</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__user-story">
+        <h2 class="form__title">Опишите свои эмоции</h2>
+        <textarea class="form__textarea" name="user-story" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+      </fieldset>
+
+      <div class="form__send-form">
+        <input class="button" type="submit" value="Отправить форму">
+        <div class="form__footnote"><span>*</span> - обязательные поля</div>
+      </div>
+    </form>
+
+    <footer class="footer container">
+      <div class="footer__logo" title="PINK-logo"></div>
+      <div class="footer__social">
+        <a class="social__link" href="#"></a>
+        <a class="social__link" href="#"></a>
+        <a class="social__link" href="#"></a>
+      </div>
+      <div class="footer__copyright">
+        <span>Разработано</span>
+        <a href="https://htmlacademy.ru"></a>
+      </div>
+    </footer>
+
+    <!--Скрытые формы-->
+
+    <!--
+
+    <form class="popup">
+      <div class="popup__info">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <button class="popup__button button">ок</button>
+    </form>
+
+    <form class="popup">
+      <div class="popup__info">
+        <h2 class="popup__title">Ваша заявка отправлена</h2>
+        <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+        <button class="popup__button button">Закрыть окно</button>
+    </form>
+
+    -->
+
+  </body>
+</html>
