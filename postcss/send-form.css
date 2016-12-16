@@ -1,0 +1,38 @@
+.send-form {
+  text-align: center;
+  margin-bottom: 62px;
+
+  &__footnote {
+    margin-top: 26px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__footnote span {
+    color: $darkpink;
+  }
+
+  @media (--tablet-widths) {
+    height: 94px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    &__footnote {
+      margin: 0;
+    }
+  }
+
+
+
+
+  @media (--desktop-widths) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+
+}

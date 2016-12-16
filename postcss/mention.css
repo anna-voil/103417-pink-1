@@ -1,0 +1,19 @@
+.mention {
+  text-align: center;
+  width: 100%;
+  flex-shrink: 0;
+
+  @media (--mobile-widths) {
+    &__about-user {
+      display: none;
+    }
+  }
+  @media (--tablet-widths) {
+    flex-shrink: 0;
+    width: 100%;
+  }
+  @media (--desktop-widths) {
+    flex-shrink: 0;
+    width: 100%;
+  }
+}

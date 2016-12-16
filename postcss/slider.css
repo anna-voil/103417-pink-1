@@ -1,0 +1,23 @@
+.slider {
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__slides {  /*РАБОТА СЛАЙДЕРА*/
+      width: 100%;
+      display: flex;
+      overflow: scroll;
+  }
+
+  @media (--mobile-widths) {}
+
+
+  @media (--tablet-widths) {}
+
+
+  @media (--desktop-widths) {}
+
+
+}

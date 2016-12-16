@@ -1,0 +1,60 @@
+@import "../node_modules/normalize.css/normalize.css";
+@import "variables.css";
+
+@import "achievements.css";
+@import "add-photo.css";
+@import "advantages.css";
+@import "apps.css";
+@import "button.css";
+@import "contacts.css";
+@import "container.css";
+@import "download.css";
+@import "fact.css";
+@import "fonts.css";
+@import "footer.css";
+@import "header.css";
+@import "main.css";
+@import "map.css";
+@import "mention.css";
+@import "nav.css";
+@import "offer.css";
+@import "outlines.css";
+@import "panorama.css";
+@import "photo-block.css";
+@import "photos.css";
+@import "popup.css";
+@import "send-form.css";
+@import "services-package.css";
+@import "slider.css";
+@import "social.css";
+@import "story-form.css";
+@import "user-contacts.css";
+@import "user-story.css";
+@import "username.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Open Sans';
+  color: $darkblue;
+}
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}

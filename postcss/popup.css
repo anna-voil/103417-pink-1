@@ -1,0 +1,12 @@
+.popup {
+  display: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+
+  &__info {
+  }
+
+  &__btn-panel {
+    background: $bg_lightgrey;
+  }
+}
