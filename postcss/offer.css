@@ -1,0 +1,23 @@
+.offer {
+  font-weight: lighter;
+  font-size: 24px;
+  text-align: center;
+
+  @media (--mobile-widths) {
+    &__text {
+      font-size: 24px;
+    }
+  }
+
+  @media (--tablet-widths) {
+    &__text {
+      font-size: 40px;
+    }
+  }
+
+  @media (--desktop-widths) {
+    &__text {
+      font-size: 50px;
+    }
+  }
+}

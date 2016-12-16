@@ -1,0 +1,26 @@
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+
+  }
+
+  @media (--tablet-widths) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item {
+      width: 300px;
+    }
+  }
+
+  @media (--desktop-widths) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+      width: 300px;
+      margin-bottom: 54px;
+    }
+  }
+}

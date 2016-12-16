@@ -1,0 +1,52 @@
+.story-form {
+
+  @media (--tablet-widths) {
+    display: flex;
+    justify-content: row-reverse;
+    flex-direction: column-reverse;
+
+    &__username {
+      order: 1;
+    }
+
+    &__user-story {
+      order: -1;
+    }
+
+    &__send-form {
+      order: -2;
+    }
+  }
+
+
+
+  @media (--desktop-widths) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+
+    &__username {
+      width: 435px;
+      margin-right: 70px;
+      order: 1;
+    }
+
+    &__apps {
+      width: 435px;
+    }
+
+    &__user-story {
+      order: -1;
+    }
+
+    &__send-form {
+      order: -2;
+    }
+
+
+
+
+  }
+
+}

@@ -1,0 +1,40 @@
+.fact {
+  background-color: $bg_lightgrey;
+  &__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+  @media (--mobile-widths) {
+    &__wrapper {
+      display: none;
+    }
+  }
+
+  @media (--tablet-widths) {
+    &__section {
+      width: 50%;
+      text-align: left;
+    }
+  }
+
+  @media (--desktop-widths) {
+    &__section {
+      width: 60%;
+    }
+
+    &__heading {
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+
+
+
+
+
+
+}

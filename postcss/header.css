@@ -1,0 +1,83 @@
+.header {
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-size: auto;  /*ПРОВЕРИТЬ*/
+  background-position: top center;
+  background-repeat: no-repeat;
+
+
+
+  &__title {
+    font-size: 24px;
+    display: block;
+    padding: 30px 20px 54px 20px;
+    line-height: 29px;
+    text-align: center;
+    color: $bg_white;
+    font-weight: lighter;
+  }
+
+  @media (--mobile-widths) {
+
+  }
+
+  @media (--tablet-widths) {
+    @media (--retina) {
+      background-image: url(../img/bg-back-mobile@2x.jpg);
+      background-size: auto; /*ПРОВЕРИТЬ*/
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+      padding: 70px 40px 80px 40px;
+    }
+  }
+
+
+  @media (--desktop-widths) {
+    background-size: 100% auto; /*ПРОВЕРИТЬ*/
+    @media (--retina) {
+      background-image: url(../img/bg-back-mobile@2x.jpg);
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+      padding: 64px 40px 100px 40px;
+    }
+  }
+
+
+  &--index {
+  background-image: url(../img/iphone-hand-mobile@1x.png),
+                    url(../img/bg-back-mobile@1x.jpg);
+  background-size: auto, cover;  /*ПРОВЕРИТЬ*/
+  background-position: top 175px left, top center;
+  background-repeat: no-repeat;
+
+  @media (--mobile-widths) {
+    height: 734px;
+    position: relative;
+  }
+
+  @media (--tablet-widths) {
+    background-size: 470px auto, cover; /*ПРОВЕРИТЬ*/
+    background-position: bottom right 45px, top center;
+    @media (--retina) {
+      background-image: url(../img/iphone-hand-mobile@2x.png),
+                        url(../img/bg-back-mobile@2x.jpg);
+    }
+  }
+
+  @media (--desktop-widths) {
+    position: relative;
+    background-size: 470px auto, cover;  /*ПРОВЕРИТЬ*/
+    background-position: bottom right 157px, top center;
+    @media (--retina) {
+      background-image: url(../img/iphone-hand-mobile@2x.png),
+                        url(../img/bg-back-mobile@2x.jpg);
+    }
+  }
+}
+
+}

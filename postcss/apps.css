@@ -1,0 +1,138 @@
+.apps {
+  height: 340px;
+  padding: 35px 0;
+  background: $bg_lightgrey;
+
+  &__wrapper {
+    border: none;
+  }
+
+  &__header {
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $darkpink;
+  }
+
+  &__items {
+    padding-top: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+    flex-basis: 74px;
+    padding-left: 70px;
+    font-size: 18px;
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: solid 2px $borders;
+    background: $bg_white;
+    border-radius: 50%;
+  }
+
+  &__item::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    width: 15px;
+    height: 15px;
+    background: $darkpink;
+    border-radius: 50%;
+  }
+
+  &__radio-btn {
+    display: none;
+  }
+
+  @media (--mobile-widths) {
+    &__wrapper {
+      margin: auto;
+      width: 280px;
+    }
+  }
+
+  @media (--tablet-widths) {
+    padding: 0;
+    background: none;
+    margin-bottom: 23px;
+
+    &__wrapper {
+      width: 620px;
+      margin: auto;
+      height: 305px;
+      border: solid 2px $borders;
+    }
+
+    &__items {
+      padding: 55px 58px 7px 58px;
+    }
+
+    &__item {
+      padding-left: 59px;
+    }
+  }
+
+
+
+
+
+
+
+
+  @media (--desktop-widths) {
+    padding: 0;
+    background: none;
+    margin-bottom: 23px;
+
+    &__wrapper {
+      margin: 0;
+      height: 305px;
+      border: solid 2px $borders;
+    }
+
+    &__items {
+      padding: 55px 58px 7px 74px;
+    }
+
+    &__item {
+      padding-left: 59px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+}

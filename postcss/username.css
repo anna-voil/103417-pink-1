@@ -1,0 +1,125 @@
+.username {
+  padding: 4px 0;
+  height: 370px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__row {
+    display: block;
+  }
+
+  &__caption {
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $darkpink;
+  }
+
+  &__textfield {
+    display: block;
+    width: 100%;
+    height: 63px;
+    margin: 12px 0 22px 0;
+    padding-left: 20px;
+    border: solid 2px $bg_lightgrey;
+    font-size: 18px;
+  }
+
+  &__textfield::placeholder,
+  &__textarea::placeholder {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: normal;
+    color: $darkblue;
+  }
+
+  @media (--mobile-widths) {
+    margin: auto;
+    width: 280px;
+  }
+
+  @media (--tablet-widths) {
+    width: 620px;
+    margin: auto;
+    padding: 36px 0 40px 0;
+    margin-bottom: 19px;
+    display: flex-column;
+
+    &__caption {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+
+    &__row {
+      display: flex;
+      align-items: baseline; /*ПРОВЕРИТЬ*/
+    }
+
+    &__textfield {
+      margin: 0;
+    }
+  }
+
+
+
+
+  @media (--desktop-widths) {
+    margin-top: 2px;
+    padding: 36px 0 40px 0;
+    margin-bottom: 19px;
+    display: flex;
+
+    &__caption {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+
+    &__row {
+      display: flex;
+      align-items: baseline; /*ПРОВЕРИТЬ*/
+    }
+
+    &__textfield {
+      margin: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

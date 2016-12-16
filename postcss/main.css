@@ -1,0 +1,49 @@
+.main {
+  &__title {
+    text-align: center;
+    padding-top: 46px;
+    margin-bottom: 35px;
+  }
+
+  &__title p {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 30px;
+  }
+  &__title span { /*проверить отображение*/
+    display:none;
+  }
+
+  @media (--tablet-widths) {
+    &__title {
+      padding-top: 92px;
+    }
+
+    &__title p {
+      font-size: 18px;
+      margin: 0;
+      padding: 0 40px;
+    }
+    &__title span {
+      display: block;
+    }
+  }
+
+  @media (--desktop-widths) {
+    &__title {
+      padding: 93px 84px 10px 84px;
+    }
+
+    &__title p {
+      display: inline-block;
+      font-size: 19px;
+      margin: 0;
+      text-align: center;
+      line-height: 30px;
+    }
+    &__title span {
+      display: inline-block;
+    }
+  }
+}

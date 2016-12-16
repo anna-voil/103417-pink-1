@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  width: 177px;
+  justify-content: space-between;
+  margin: 40px 0;
+
+  &__link {
+    display: block;
+    width: 51px;
+    height: 51px;
+    border: solid 2px $borders;
+    border-radius: 50%;
+  }
+}

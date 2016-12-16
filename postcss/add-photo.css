@@ -1,0 +1,47 @@
+.add-photo {
+  text-align: center;
+  background: $bg_lightgrey;
+
+  @media (--mobile-widths) {
+    padding: 20px 0;
+
+  &__filters-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+  @media (--tablet-widths) {
+    padding: 57px 0;
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__add-filters {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__filter-row {
+      width: 273px;
+    }
+  }
+  @media (--desktop-widths) {
+    padding: 60px 80px;
+    display: flex;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__add-filters {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

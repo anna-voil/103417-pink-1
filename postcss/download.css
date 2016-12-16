@@ -1,0 +1,50 @@
+.download {
+  background-color: $darkblue;
+
+  &__wrapper {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $bg_white;
+  font-weight: lighter;
+}
+
+  @media (--mobile-widths) {
+    position: relative;
+    bottom: -400px;
+    height: 270px;
+
+    &__header {
+      display: none;
+    }
+  }
+  @media (--tablet-widths) {
+    background: none;
+
+    &__header {
+      font-weight: lighter;
+      font-size: 40px;
+    }
+  }
+
+  @media (--desktop-widths) {
+    background: none;
+
+
+    &__header {
+      font-weight: lighter;
+      font-size: 50px;
+    }
+
+    &__comment {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &__icons {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
